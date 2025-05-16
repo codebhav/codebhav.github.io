@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://codebhav.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://codebhav.github.io/" rel="alternate" type="text/html" /><updated>2025-05-16T03:04:44+00:00</updated><id>https://codebhav.github.io/feed.xml</id><title type="html">Vaibhav</title><subtitle>Personal website and blog</subtitle><entry><title type="html">Welcome to My Blog</title><link href="https://codebhav.github.io/general/2025/05/15/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to My Blog" /><published>2025-05-15T21:00:00+00:00</published><updated>2025-05-15T21:00:00+00:00</updated><id>https://codebhav.github.io/general/2025/05/15/welcome-to-jekyll</id><content type="html" xml:base="https://codebhav.github.io/general/2025/05/15/welcome-to-jekyll.html"><![CDATA[<p>This is my first blog post. Jekyll makes it easy to create content using Markdown.</p>
+
+<!-- more -->
+
+<h2 id="what-to-expect">What to Expect</h2>
+
+<p>In this blog, I’ll be sharing my thoughts on [your topics of interest], projects I’m working on, and more.</p>
+
+<h2 id="code-snippets">Code Snippets</h2>
+
+<p>Jekyll makes it easy to include code snippets:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">hello_world</span><span class="p">():</span>
+    <span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">Hello, World!</span><span class="sh">"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Stay tuned for more posts!</p>
+
+<h3 id="tag-pages-generator">Tag Pages Generator</h3>
+
+<p>Create <code class="language-plaintext highlighter-rouge">_plugins/tag_generator.rb</code>:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">module</span> <span class="nn">Jekyll</span>
+  <span class="k">class</span> <span class="nc">TagPageGenerator</span> <span class="o">&lt;</span> <span class="no">Generator</span>
+    <span class="n">safe</span> <span class="kp">true</span>
+
+    <span class="k">def</span> <span class="nf">generate</span><span class="p">(</span><span class="n">site</span><span class="p">)</span>
+      <span class="k">if</span> <span class="n">site</span><span class="p">.</span><span class="nf">layouts</span><span class="p">.</span><span class="nf">key?</span> <span class="s1">'tag'</span>
+        <span class="n">site</span><span class="p">.</span><span class="nf">tags</span><span class="p">.</span><span class="nf">each_key</span> <span class="k">do</span> <span class="o">|</span><span class="n">tag</span><span class="o">|</span>
+          <span class="n">site</span><span class="p">.</span><span class="nf">pages</span> <span class="o">&lt;&lt;</span> <span class="no">TagPage</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="n">site</span><span class="p">,</span> <span class="n">site</span><span class="p">.</span><span class="nf">source</span><span class="p">,</span> <span class="no">File</span><span class="p">.</span><span class="nf">join</span><span class="p">(</span><span class="s1">'writings'</span><span class="p">,</span> <span class="s1">'tags'</span><span class="p">),</span> <span class="n">tag</span><span class="p">)</span>
+        <span class="k">end</span>
+      <span class="k">end</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+
+  <span class="k">class</span> <span class="nc">TagPage</span> <span class="o">&lt;</span> <span class="no">Page</span>
+    <span class="k">def</span> <span class="nf">initialize</span><span class="p">(</span><span class="n">site</span><span class="p">,</span> <span class="n">base</span><span class="p">,</span> <span class="n">dir</span><span class="p">,</span> <span class="n">tag</span><span class="p">)</span>
+      <span class="vi">@site</span> <span class="o">=</span> <span class="n">site</span>
+      <span class="vi">@base</span> <span class="o">=</span> <span class="n">base</span>
+      <span class="vi">@dir</span> <span class="o">=</span> <span class="n">dir</span>
+      <span class="vi">@name</span> <span class="o">=</span> <span class="s2">"</span><span class="si">#{</span><span class="n">tag</span><span class="si">}</span><span class="s2">.html"</span>
+
+      <span class="nb">self</span><span class="p">.</span><span class="nf">process</span><span class="p">(</span><span class="vi">@name</span><span class="p">)</span>
+      <span class="nb">self</span><span class="p">.</span><span class="nf">read_yaml</span><span class="p">(</span><span class="no">File</span><span class="p">.</span><span class="nf">join</span><span class="p">(</span><span class="n">base</span><span class="p">,</span> <span class="s1">'_layouts'</span><span class="p">),</span> <span class="s1">'tag.html'</span><span class="p">)</span>
+      <span class="nb">self</span><span class="p">.</span><span class="nf">data</span><span class="p">[</span><span class="s1">'tag'</span><span class="p">]</span> <span class="o">=</span> <span class="n">tag</span>
+      <span class="nb">self</span><span class="p">.</span><span class="nf">data</span><span class="p">[</span><span class="s1">'title'</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"Posts tagged with '</span><span class="si">#{</span><span class="n">tag</span><span class="si">}</span><span class="s2">'"</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre></div></div>]]></content><author><name></name></author><category term="general" /><category term="introduction" /><category term="welcome" /><summary type="html"><![CDATA[This is my first blog post. Jekyll makes it easy to create content using Markdown.]]></summary></entry></feed>

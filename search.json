@@ -1,0 +1,11 @@
+[
+  
+    {
+      "title": "Welcome to My Blog",
+      "url": "/general/2025/05/15/welcome-to-jekyll.html",
+      "date": "May 15, 2025",
+      "content": "This is my first blog post. Jekyll makes it easy to create content using Markdown.\n\n\n\nWhat to Expect\n\nIn this blog, I’ll be sharing my thoughts on [your topics of interest], projects I’m working on, and more.\n\nCode Snippets\n\nJekyll makes it easy to include code snippets:\n\ndef hello_world():\n    print(\"Hello, World!\")\n\n\nStay tuned for more posts!\n\nTag Pages Generator\n\nCreate _plugins/tag_generator.rb:\n\nmodule Jekyll\n  class TagPageGenerator &lt; Generator\n    safe true\n\n    def generate(site)\n      if site.layouts.key? 'tag'\n        site.tags.each_key do |tag|\n          site.pages &lt;&lt; TagPage.new(site, site.source, File.join('writings', 'tags'), tag)\n        end\n      end\n    end\n  end\n\n  class TagPage &lt; Page\n    def initialize(site, base, dir, tag)\n      @site = site\n      @base = base\n      @dir = dir\n      @name = \"#{tag}.html\"\n\n      self.process(@name)\n      self.read_yaml(File.join(base, '_layouts'), 'tag.html')\n      self.data['tag'] = tag\n      self.data['title'] = \"Posts tagged with '#{tag}'\"\n    end\n  end\nend\n\n",
+      "tags": ["introduction","welcome"]
+    }
+  
+]

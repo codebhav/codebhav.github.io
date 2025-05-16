@@ -1,35 +1,32 @@
 ---
 layout: page
-title: Contact
+title: contact
 permalink: /contact/
 ---
 
-I would love to connect with more people and read what they have to say. Please feel free to contact me if you want me to read your blog, share your ideas, or ask me about something. If you think I am wrong about something, please let me know!
+i really do appreciate you stopping by, if you had any questions or suggestions, here are ways you can get in touch with me:
 
-The best way to reach me is via email at [hi@whybhav.in](mailto:hi@whybhav.in).
-
-You can encrypt your communications to me via [age](https://age-encryption.org) using my [ssh keys](https://your-domain.com/keys). (more preferred)
-
-I also have a PGP key [0xYOUR_KEY_ID](/files/publickey.asc), should you wish to use pgp.
-
-Backup email if above doesn't work:
-
--   [backup-email@example.com](mailto:backup-email@example.com)
--   [another-email@example.com](mailto:another-email@example.com)
+-   email: [hi@whybhav.in](mailto:hi@whybhav.in)
+-   alt. email: [vaibhava0801@gmail.com](mailto:vaibhava0801@gmail.com)
+-   discord: `whybhav`
+-   pgp (0x41C24D48): [0377 7822 985B 6143 A0F7  672E E1FA 436D 41C2 4D48](/files/publickey.asc)
 
 <br>
 
 ---
 
 <br>
-For a more asynchronous chat, below are ways you can find me.
 
-Discord: `whybhav`  
-GitHub: [github.com/username](https://github.com/username)  
-LinkedIn: [linkedin.com/in/username](https://linkedin.com/in/username)
+other (somewhat) relevant Links:
 
-I currently live along the East Coast, so my timezone is Eastern Daylight Time (UTC-4).
+github: [github.com/codebhav](https://github.com/codebhav)  
+linkedin: [linkedin.com/in/whybhav](https://linkedin.com/in/whybhav)
+twitter: [linkedin.com/in/whybhav](https://linkedin.com/in/whybhav)
+instagram: [linkedin.com/in/whybhav](https://linkedin.com/in/whybhav)
+mastadon: [linkedin.com/in/whybhav](https://linkedin.com/in/whybhav)
 
-If I don't respond, it's not you, it's me.
-(It might be you. I didn't want to say it, but now I'm in parentheses
-so I can be honest.)
+i currently live along the east coast, so my timezone is eastern daylight time (UTC-4).
+
+if i don't respond, it's not you, it's me.
+(it might be you. i didn't want to say it, but now i'm in parentheses
+so i can be honest.)

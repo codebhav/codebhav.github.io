@@ -1,35 +1,31 @@
 ---
 layout: page
-title: Now (May 2025 Edition)
+title: now (may 2025 edition)
 permalink: /now/
 ---
 
-<p>Oh my is it almost finals season.</p>
+<p>summer break, wahuu!</p>
 
-## My current focuses
+## what I'm reading
 
--   Coursework
--   Working on personal projects with SvelteKit and TailwindCSS
--   Research work in [specific area]
--   Writing and photography
--   [Any other current focus]
+-   a wrinkle in time by madeleine l'engle
+-   bonjour tristesse by françoise sagan
 
-## What I'm reading
+## what I'm playing
 
--   [Book title 1]
--   [Book title 2]
+-   nyt dailies - [you can join my leaderboard here](https://www.nytimes.com/crosswords/apps?code=52bf39e7-403d-40a2-b41f-f57b3ebaecc4)
+-   going for sub-10 all country flags on sporcle
 
-## What I'm playing
+## what I'm watching
 
--   [Game 1]
--   [Game 2]
+-   it's always sunny in philadelphia
+-   daredevil born again
 
-## What I'm watching
-
--   [TV Show/Movie 1]
--   [TV Show/Movie 2]
+<br>
 
 ---
+
+<br>
 
 <p>Updated May 16, 2025</p>
 <p>Part of the <a href="https://nownownow.com/about" target="_blank">/now page</a> movement.</p>

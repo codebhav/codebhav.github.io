@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Writings
+title: writings
 permalink: /writings/
 custom_js:
     - search

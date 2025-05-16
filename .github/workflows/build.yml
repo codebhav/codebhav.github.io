@@ -1,7 +1,9 @@
 name: Build and deploy Jekyll site
+
 on:
     push:
         branches: [main]
+
 jobs:
     build:
         runs-on: ubuntu-latest
@@ -27,7 +29,7 @@ jobs:
             - name: Setup Ruby
               uses: ruby/setup-ruby@v1
               with:
-                  ruby-version: "3.2"
+                  ruby-version: "3.0"
                   bundler-cache: true
 
             - name: Build site

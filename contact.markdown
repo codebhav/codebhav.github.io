@@ -19,11 +19,13 @@ i really do appreciate you stopping by, if you had any questions or suggestions,
 
 other (somewhat) relevant Links:
 
--   github: [github.com/codebhav](https://github.com/codebhav)
--   linkedin: [linkedin.com/in/whybhav](https://linkedin.com/in/whybhav)
--   twitter: [twitter.com/reallywhybhav](https://twitter.com/reallywhybhav)
--   instgram [instagram.com/reallywhybhav/](https://www.instagram.com/reallywhybhav/)
--   mastadon: [@whybhav@mastodon.social](https://mastodon.social/@whybhav)
+-   github: <a href="https://github.com/codebhav" target="_blank">github.com/codebhav</a>
+-   linkedin: <a href="https://linkedin.com/in/whybhav" target="_blank">linkedin.com/in/whybhav</a>
+-   twitter: <a href="https://twitter.com/reallywhybhav" target="_blank">twitter.com/reallywhybhav</a>
+-   instagram: <a href="https://www.instagram.com/reallywhybhav/" target="_blank">instagram.com/reallywhybhav/</a>
+-   mastodon: <a href="https://mastodon.social/@whybhav" target="_blank">@whybhav@mastodon.social</a>
+
+<br>
 
 i currently live along the east coast, so my timezone is eastern daylight time (UTC-4).
 

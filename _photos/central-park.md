@@ -1,8 +1,8 @@
 ---
 layout: photo
 title: "Central Park"
-image: central_park.jpg
-date: 2025-05-15
+image: central-park.jpg
+date: 2025-05-16
 ---
 
-A beautiful day at Central Park in New York City.
+Central Park.

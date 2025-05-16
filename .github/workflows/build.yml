@@ -1,0 +1,42 @@
+name: Build and deploy Jekyll site
+
+on:
+    push:
+        branches: [main]
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v3
+              with:
+                  fetch-depth: 0
+
+            - name: Generate build info
+              run: |
+                  echo "GIT_COMMIT=$(git rev-parse HEAD)" >> $GITHUB_ENV
+                  echo "GIT_REF=$(git symbolic-ref HEAD)" >> $GITHUB_ENV
+                  echo "BUILD_TIME=$(date -u +"%Y-%m-%dT%H:%M:%SZ")" >> $GITHUB_ENV
+
+            - name: Create build info file
+              run: |
+                  mkdir -p _data
+                  echo "build_info:" > _data/build_info.yml
+                  echo "  commit: ${{ env.GIT_COMMIT }}" >> _data/build_info.yml
+                  echo "  ref: ${{ env.GIT_REF }}" >> _data/build_info.yml
+                  echo "  time: ${{ env.BUILD_TIME }}" >> _data/build_info.yml
+
+            - name: Setup Ruby
+              uses: ruby/setup-ruby@v1
+              with:
+                  ruby-version: "3.0"
+                  bundler-cache: true
+
+            - name: Build site
+              run: bundle exec jekyll build
+
+            - name: Deploy
+              uses: peaceiris/actions-gh-pages@v3
+              with:
+                  github_token: ${{ secrets.GITHUB_TOKEN }}
+                  publish_dir: ./_site

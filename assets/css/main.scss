@@ -75,6 +75,9 @@ ol {
 	a {
 		color: $text-color;
 		font-size: 1.1rem;
+		text-decoration-color: #156cec;
+		text-decoration-thickness: 2px;
+		text-underline-offset: 2px;
 
 		&.active {
 			font-weight: 600;

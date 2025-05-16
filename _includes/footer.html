@@ -1,8 +1,27 @@
 <footer class="site-footer">
 	<div class="footer-content">
 		<p>
-			Copyright © {{ site.time | date: '%Y' }} {{ site.title }}. All
-			rights reserved. Built with ☕ and ❤️
+			All opinions here are my own and do not reflect the views of my
+			employers or university: future, past, and present.
 		</p>
+		<p>
+			All text here are released under
+			<a href="https://creativecommons.org/licenses/by/4.0/"
+				>(CC BY 4.0)</a
+			>
+			• Source code
+			<a href="https://github.com/codebhav/codebhav.github.io"
+				>available here</a
+			>, released under the MIT license
+		</p>
+		{% if site.data.build_info %}
+		<p>
+			Built on: {{ site.data.build_info.time }} • Ref: {{
+			site.data.build_info.ref }} • Commit: {{ site.data.build_info.commit
+			| slice: 0, 7 }}
+		</p>
+		{% else %}
+		<p>Built on: {{ site.time | date_to_xmlschema }}</p>
+		{% endif %}
 	</div>
 </footer>

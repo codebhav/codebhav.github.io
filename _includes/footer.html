@@ -5,7 +5,7 @@
 			employers or university: future, past, and present.
 		</p>
 		<p>
-			All text here are released under
+			All media here are released under
 			<a href="https://creativecommons.org/licenses/by/4.0/"
 				>(CC BY 4.0)</a
 			>
@@ -14,15 +14,6 @@
 				>available here</a
 			>, released under the MIT license
 		</p>
-
-		{% if site.data.build_info and site.data.build_info.commit %}
-		<p>
-			Built on: {{ site.data.build_info.time }} • Ref: {{
-			site.data.build_info.ref | split: "/" | last }} • Commit: {{
-			site.data.build_info.commit | slice: 0, 7 }}
-		</p>
-		{% else %}
-		<p>Built on: {{ site.time | date: "%Y-%m-%dT%H:%M:%S%z" }}</p>
-		{% endif %}
+		<p>Built on: {{ site.time | date: "%Y-%m-%dT%H:%M:%SZ" }}</p>
 	</div>
 </footer>

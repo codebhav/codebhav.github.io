@@ -753,6 +753,15 @@ code.highlighter-rouge {
 	.photo-modal .modal-content {
 		max-width: 95%;
 	}
+
+	.site-footer {
+		margin-top: 4rem;
+		padding-top: 2rem;
+		border-top: 1px solid $border-color;
+		text-align: center;
+		color: $light-text-color;
+		font-size: 0.7rem;
+	}
 }
 
 @media (max-width: 600px) {

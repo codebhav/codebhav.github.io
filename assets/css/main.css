@@ -653,6 +653,14 @@ code.highlighter-rouge {
   .photo-modal .modal-content {
     max-width: 95%;
   }
+  .site-footer {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    color: #767676;
+    font-size: 0.7rem;
+  }
 }
 @media (max-width: 600px) {
   .site-nav ul {

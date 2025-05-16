@@ -78,7 +78,9 @@ ol {
   align-items: center;
   justify-content: center;
   min-height: 50vh;
-  text-align: center;
+}
+.home-container h1 {
+  font-size: 1.8rem !important;
 }
 
 .intro-section {

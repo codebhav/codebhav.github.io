@@ -9,10 +9,12 @@ layout: home
 
 # hi! i'm vaibhav, but you can call me bhav :)
 
-_\*narrator's voice\*_
+<em>\*narrator's voice\*</em>
 
-bhav's a 24 y/o computer science graduate student who likes making cool shit (mostly using sveltekit and tailwindcss).
+<p>bhav's a 24 y/o graduate student who likes making <a href="https://github.com/codebhav" target="_blank">cool shit</a> (mostly using sveltekit and tailwindcss).</p>
 
-he tries to interest you in everything all of the time, mostly through his writing and photography. he love all things music, chess, and twitch.
+<p>he often tries to interest you in everything all of the time through his questionable <a href="https://whybhav.substack.com/" target="_blank">writing</a> and, what critics refer to as, just-good-enough <a href="https://www.instagram.com/reallywhybhav/" target="_blank">photography</a>. he loves all things <a href="https://open.spotify.com/user/0rs4afffl5o4avb4ilxbot2ty?si=baeaa50c7a9c417c" target="_blank">music</a>, <a href="https://letterboxd.com/whybhav/" target="_blank">films</a>, and <a href="https://www.chess.com/member/reallywhybhav" target="_blank">chess</a>.
 
-despite the horrors, he still belives the world is worth saving, and is extremely passionate about making technology, education, and healthcare accessible to everyone.
+<p>despite the horrors, he still believes the world is worth saving, and is extremely passionate about making technology, education, and healthcare accessible to everyone.</p>
+
+<p>he also has one of those <a href="/assets/docs/Resume.pdf" target="_blank">résumés</a>, if you even care.</p>

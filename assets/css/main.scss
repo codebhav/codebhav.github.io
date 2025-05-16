@@ -80,7 +80,7 @@ ol {
 		text-underline-offset: 2px;
 
 		&.active {
-			font-weight: 600;
+			color: $link-color;
 		}
 	}
 }
@@ -102,22 +102,39 @@ ol {
 	align-items: center;
 	justify-content: center;
 	min-height: 50vh;
-	h1 {
-		font-size: 1.8rem !important;
-	}
 }
 
 .intro-section {
 	max-width: 600px;
-
 	h1 {
-		font-size: 3rem;
+		font-size: 1.8rem;
 		margin-bottom: 1rem;
 	}
 
 	p {
 		font-size: 1.2rem;
+		margin-bottom: 1rem;
 		color: $light-text-color;
+	}
+	a {
+		color: $text-color;
+		background: linear-gradient(
+			180deg,
+			rgba(255, 255, 255, 0) 60%,
+			rgba(255, 229, 59, 0.3) 50% /* More transparent yellow */
+		);
+		padding: 0 2px;
+		display: inline;
+		text-decoration: none;
+		transition: background 0.8s ease; /* Smooth transition for hover effect */
+	}
+
+	a:hover {
+		background: linear-gradient(
+			180deg,
+			rgba(255, 255, 255, 0) 60%,
+			#ffe53b 50% /* Full opacity yellow on hover */
+		);
 	}
 }
 

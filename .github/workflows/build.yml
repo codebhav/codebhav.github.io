@@ -33,7 +33,20 @@ jobs:
                   bundler-cache: true
 
             - name: Build site
-              run: bundle exec jekyll build
+              run: |
+                  echo "Building Jekyll site with plugins enabled..."
+                  JEKYLL_ENV=production bundle exec jekyll build --verbose
+
+                  # Check if tag pages were created
+                  echo "Checking for tag pages:"
+                  find _site/writings/tags -type f -name "*.html" | sort
+
+                  if [ -f _site/tag-debug.txt ]; then
+                    echo "Tag debug file content:"
+                    cat _site/tag-debug.txt
+                  else
+                    echo "Tag debug file was not created!"
+                  fi
 
             - name: Deploy
               uses: peaceiris/actions-gh-pages@v3

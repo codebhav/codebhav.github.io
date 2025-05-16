@@ -14,14 +14,15 @@
 				>available here</a
 			>, released under the MIT license
 		</p>
-		{% if site.data.build_info %}
+
+		{% if site.data.build_info and site.data.build_info.commit %}
 		<p>
 			Built on: {{ site.data.build_info.time }} • Ref: {{
-			site.data.build_info.ref }} • Commit: {{ site.data.build_info.commit
-			| slice: 0, 7 }}
+			site.data.build_info.ref | split: "/" | last }} • Commit: {{
+			site.data.build_info.commit | slice: 0, 7 }}
 		</p>
 		{% else %}
-		<p>Built on: {{ site.time | date_to_xmlschema }}</p>
+		<p>Built on: {{ site.time | date: "%Y-%m-%dT%H:%M:%S%z" }}</p>
 		{% endif %}
 	</div>
 </footer>

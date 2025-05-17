@@ -6,18 +6,18 @@
 		</p>
 		<p>
 			all media here are released under
-			<a
+			
 				href="https://creativecommons.org/licenses/by/4.0/"
 				target="_blank"
 				>(CC BY 4.0)</a
 			>
 			• source code
-			<a
+			
 				href="https://github.com/codebhav/codebhav.github.io"
 				target="_blank"
 				>available here</a
 			>, released under the MIT license
 		</p>
-		<p>built on: {{ site.time | date: "%Y-%m-%dT%H:%M:%SZ" }}</p>
+		<p>built on: {{ site.time | date: "%Y-%m-%dT%H:%M:%SZ" }} • commit: {% if site.data.build_info %}{{ site.data.build_info.commit }}{% else %}unknown{% endif %}</p>
 	</div>
 </footer>

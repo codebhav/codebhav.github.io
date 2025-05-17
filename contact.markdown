@@ -4,7 +4,7 @@ title: contact
 permalink: /contact/
 ---
 
-i really do appreciate you stopping by, if you had any questions or suggestions, here are ways you can get in touch with me:
+i really do appreciate you stopping by; if you have any questions or suggestions, here are ways you can get in touch with me:
 
 -   email: [hi@whybhav.in](mailto:hi@whybhav.in)
 -   alt. email: [vaibhava0801@gmail.com](mailto:vaibhava0801@gmail.com)
@@ -29,6 +29,4 @@ other (somewhat) relevant Links:
 
 i currently live along the east coast, so my timezone is eastern daylight time (UTC-4).
 
-if i don't respond, it's not you, it's me.
-(it might be you. i didn't want to say it, but now i'm in parentheses
-so i can be honest.)
+if i don’t respond, it’s not you; it’s me. (it might be you. i didn’t want to say it, but now i’m in parentheses so i can be honest.)

@@ -21,10 +21,11 @@ jobs:
             - name: Create build info file
               run: |
                   mkdir -p _data
-                  echo "build_info:" > _data/build_info.yml
-                  echo "  commit: ${{ env.GIT_COMMIT }}" >> _data/build_info.yml
-                  echo "  ref: ${{ env.GIT_REF }}" >> _data/build_info.yml
-                  echo "  time: ${{ env.BUILD_TIME }}" >> _data/build_info.yml
+                  cat > _data/build_info.yml << EOF
+                  commit: ${{ env.GIT_COMMIT }}
+                  ref: ${{ env.GIT_REF }}
+                  time: ${{ env.BUILD_TIME }}
+                  EOF
 
             - name: Setup Ruby
               uses: ruby/setup-ruby@v1
